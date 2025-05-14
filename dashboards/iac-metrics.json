@@ -1,0 +1,32 @@
+{
+  "title": "IaC Security Metrics",
+  "panels": [
+    {
+      "type": "stat",
+      "title": "tfsec Issues",
+      "targets": [
+        { "expr": "tfsec_issues", "format": "time_series" }
+      ],
+      "datasource": "Prometheus"
+    },
+    {
+      "type": "stat",
+      "title": "Checkov Issues",
+      "targets": [
+        { "expr": "checkov_issues", "format": "time_series" }
+      ],
+      "datasource": "Prometheus"
+    },
+    {
+      "type": "stat",
+      "title": "Terrascan Issues",
+      "targets": [
+        { "expr": "terrascan_issues", "format": "time_series" }
+      ],
+      "datasource": "Prometheus"
+    }
+  ],
+  "editable": true,
+  "schemaVersion": 16,
+  "version": 1
+}
